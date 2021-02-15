@@ -3,6 +3,7 @@ public class User {
     private String userName;
     private String comment;
 
+
     public String getIP() {
         return IP;
     }
@@ -25,5 +26,9 @@ public class User {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+    @Override
+    public String toString(){
+        return "User [userName=" + userName + ", userId=" + IP + ", comment="+ comment + "]";
     }
 }
