@@ -31,7 +31,7 @@ public class EFFY_Users {
             user2.setIP(IP);
             user2.setUserName(userName);
             user2.setComment(comment);
-            users.add(user);
+            users.add(user2);
         }
         else if(n>=4){
             System.out.println("Превышено допустимое количество пользователей");
