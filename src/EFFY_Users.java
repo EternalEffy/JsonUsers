@@ -27,12 +27,13 @@ public class EFFY_Users {
         usersData.add(newUser);
     }
 
-   /* public void RemoveUser(String userName){
-        if(usersData.equals(userName)){
-            usersData.remove(userName);
-        }
-        usersData.stream().forEach(x -> System.out.println(x));
-    }*/
+    public void RemoveUser(String userName){
+        usersData.removeIf(a -> userName.equals(a.getUserName()));
+    }
+
+    public void RemoveAll(){
+        usersData.clear();
+    }
 
 
     public void saveJSON(String path) {

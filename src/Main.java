@@ -6,8 +6,7 @@ public class Main {
     public static void main(String[] args) {
         EFFY_Users myUsers = new EFFY_Users();
         myUsers.loadJSON("test.json");
-        myUsers.addUser(new User("{\"IP\":\"68.188.12.132\"}","Alex","Hi were!:D"));
-        //myUsers.RemoveUser("Alex");
-        myUsers.saveJSON("test.json");
+        myUsers.addUser(new User(Generator.getIp(),Generator.getStringNameorComment(),Generator.getStringNameorComment()));
+        myUsers.saveJSON("test1.json");
     }
 }
