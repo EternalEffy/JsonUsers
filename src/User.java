@@ -2,6 +2,17 @@ public class User {
     private String IP;
     private String userName;
     private String comment;
+    private String userData;
+
+    public User(){
+
+    }
+
+    public User(String IP, String userName, String comment) {
+        this.IP=IP;
+        this.userName=userName;
+        this.comment=comment;
+    }
 
 
     public String getIP() {
