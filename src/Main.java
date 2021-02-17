@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonArrayFormatVisitor;
 public class Main {
     public static void main(String[] args) {
         EFFY_Users myUsers = new EFFY_Users();
-        myUsers.loadJSON("test.json");
+        myUsers.loadJSON("test1.json");
         myUsers.addUser(new User(Generator.getIp(),Generator.getStringNameorComment(),Generator.getStringNameorComment()));
         myUsers.saveJSON("test1.json");
     }
